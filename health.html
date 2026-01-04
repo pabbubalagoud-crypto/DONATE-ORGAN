@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ORGAN DONATION</title>
+      <style>
+      .donate{
+         background-color:rgb(255, 193, 204);
+         font-size:40px;
+         font-weight:bold;
+         margin-top:-10px;
+         margin-left:-10px;
+         margin-right:-10px;
+         padding-top:50px;
+         padding-left:550px;
+         padding-bottom:20px;
+      }
+      .organ{
+         font-family:arial;
+         font-size:30px;
+         font-weight:bold;
+         margin-left:20px;
+      }
+      .donors{
+         font-size:20px;
+         font-weight:lighter;
+         margin-left:20px;
+      }
+      .searching{
+         font-family:arial;
+         font-size:20px;
+         font-weight:100px;
+         margin-left:40px;
+      }
+      .available{
+        font-family:arial;
+        font-size:30px;
+        font-weight:bold;
+        margin-left:20px;
+      }
+      .heart{
+         font-family:arial;
+         font-size:30px;
+         background-color:rgb(247, 136, 136);
+         color:red;
+         margin-top:-10px;
+         margin-left:25px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;
+      }
+      .kidney{
+         font-family:arial;
+         font-size:30px;
+         background-color:rgb(195, 236, 252);
+         color:rgb(55, 193, 248);
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;
+      }
+      .cornea{
+        font-family:arial;
+         font-size:30px;
+         background-color:rgb(171, 171, 250);
+         color:rgb(13, 13, 124);
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;  
+      }
+      .liver{
+         font-family:arial;
+         font-size:30px;
+         background-color:rgb(239, 239, 147);
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;   
+      }
+      .lung{
+        font-family:arial;
+         font-size:30px;
+         background-color:rgb(137, 181, 205);
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;   
+      }
+      .skin{
+        font-family:arial;
+         font-size:30px;
+         background-color:pink;
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;     
+      }
+      .pancreas{
+        font-family:arial;
+         font-size:30px;
+         background-color:rgb(171, 239, 171);
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;   
+      }
+      .intestine{
+        font-family:arial;
+         font-size:30px;
+         background-color:rgb(174, 86, 86);
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;   
+      }
+      .bone{
+       font-family:arial;
+         font-size:30px;
+         background-color:rgb(177, 175, 175);
+         color:black;
+         margin-top:-10px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border-radius:25px;
+         cursor:pointer;
+         border:none;   
+      }
+      .hospital{
+         font-family:Arial;
+         font-size:40px;
+         font-weight:bold;
+         margin-left:20px;
+         margin-top:30px;
+      }
+      .hospitals{
+         font-family:arial;
+         font-size:20px;
+         font-weight:bold;
+         margin-top:10px;
+         margin-left:15px;
+      }
+      .location{
+         font-family:arial;
+         font-size:20px;
+         font-weight:lighter;
+         margin-top:-20px;
+         margin-left:8px;
+      }
+      .call{
+         font-family:arial;
+         font-size:20px;
+         font-weight:lighter;
+         margin-top:-20px;
+         margin-left:8px;
+      }
+      .person{
+        font-family:Arial;
+         font-size:40px;
+         font-weight:bold;
+         margin-left:20px;
+         margin-top:30px; 
+      }
+      .name{
+         font-family:arial;
+         font-size:20px;
+         font-weight:bold;
+         margin-left:15px;
+      }
+      .details{
+         font-family:arial;
+         font-size:20px;
+         font-weight:lighter;
+         margin-top:-2px;
+         margin-left:15px;
+      }
+      .a1{
+         font-family:arial;
+         font-size:20px;
+         font-weight:bold;
+         background-color:rgb(191, 255, 255);
+         color:black;
+         margin-bottom:20px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:10px;
+         padding-bottom:10px;
+         border:none;
+         border-radius:20px;
+         cursor:pointer;
+      }
+      .b1{
+       font-family:arial;
+         font-size:20px;
+         font-weight:bold;
+         background-color:rgb(234, 178, 233);
+         color:black;
+         margin-bottom:20px;
+         margin-left:15px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:10px;
+         padding-bottom:10px;
+         border:none;
+         border-radius:20px;  
+         cursor:pointer;
+      }
+      .c1{
+         font-family:arial;
+         font-size:20px;
+         font-weight:bold;
+         background-color:rgb(37, 239, 108);
+         color:black;
+         margin-bottom:20px;
+         margin-left:800px;
+         padding-left:20px;
+         padding-right:20px;
+         padding-top:10px;
+         padding-bottom:10px;
+         border:none;
+         border-radius:20px;
+         cursor:pointer;
+      }
+      .insurance{
+         font-family:arial;
+         font-size:40px;
+         font-weight:bold;
+         background-color:rgb(71, 71, 240);
+         margin-left:-10px;
+         margin-right:-10px;
+         padding-top:50px;
+         padding-bottom:50px;
+         border-radius:60px;
+         padding-left:20px;
+      }
+      .plans{
+         font-family:arial;
+         font-size:30px;
+         font-weight:bold;
+         margin-left:20px;
+
+      }
+      .life{
+         font-family:arial;
+         font-size:30px;
+         font-weight:bold;
+         margin-left:20px;
+         background-color:rgb(210, 251, 237);
+         padding-top:20px;
+         padding-bottom:20px;
+         padding-left:20px;
+         padding-right:20px;
+         border-radius:60px;
+         margin-right:20px;
+         cursor:pointer;
+      }
+      .assistance{
+         font-family:arial;
+         font-size:30px;
+         font-weight:bold;
+         margin-left:20px;
+      }
+      .guide{
+         font-family:arial;
+         font-size:30px;
+         font-weight:lighter;
+         background-color:rgb(140, 140, 214);
+         margin-left:20px;
+         margin-top:15px;
+         padding-top:20px;
+         padding-bottom:20px;
+         padding-left:20px;
+         padding-right:20px;
+         border-radius:20px;
+         border:none;
+         cursor:pointer;
+      }
+      .contribute{
+         font-family:arial;
+         font-size:30px;
+         font-weight:bold;
+         margin-left:20px;
+      }
+      .add{
+        font-family:arial;
+         font-size:20px;
+         font-weight:lighter;
+         margin-left:20px; 
+         margin-top:-20px;
+      }
+      .d1{
+          font-family:arial;
+         font-size:30px;
+         font-weight:lighter;
+         background-color:rgb(234, 178, 129);
+         margin-right:30px;
+         margin-left:20px;
+         margin-top:15px;
+         padding-top:20px;
+         padding-bottom:20px;
+         padding-left:20px;
+         padding-right:20px;
+         border-radius:20px;
+         border:none;
+         cursor:pointer;
+      }
+      </style>
+   </head>
+   <body>
+      <p class="donate">❤️DONATE ORGAN❤️</p>
+      <h class="organ">Find an organ</h>
+      <h1 class="donors">Search availability across hospitals and donors</h1> 
+      <h2 class="searching">&#128269 Search by organ, hospitals, city, person</h2> 
+      <div>
+      <h3 class="available">Available organs</h3>
+      <button class="heart">Heart</button>
+      <button class="kidney">Kidney</button>
+       <button class="cornea">Cornea</button>
+      <button class="liver">Liver</button>
+      <button class="lung">Lung</button>
+      <button class="skin">Skin</button>
+      <button class="pancreas">Pancreas</button>
+      <button class="intestine">intestine</button>
+      <button class="bone">Bone Marrow</button>
+      </div> 
+        <h4 class="hospital">&#127973 Hospitals</h4> 
+      <div>
+        <img src="photo.jpg">
+        <h5 class="hospitals">Apollo Hospitals</h5>
+        <p class="location">&#128205 Hyderabad, Telanagana</p>
+        <p class="call">&#9742 +91 40 2360 7777</P>
+      </div> 
+      <div>
+        <img src="photo1.jpg">
+        <h6 class="hospitals">All India Institute of Medical Sciences (AIIMS)</h6>
+        <p class="location">&#128205 New Delhi, Delhi</p>
+        <p class="call">&#9742 +91 11 2658 8500</p>
+      </div>   
+        <h7  class="person">&#128100 People</h7>
+      <div>
+        <img src="photo2.jpg">
+        <p class="name">Rajesh Kumar</p>
+        <p class="details">32, o+, Hyderabad, Telanagana</p>
+        <button class="a1">kidney</button>
+        <button class="b1">cornea</button>
+        <button class="c1">Donor</button>
+      </div>
+      <div>
+         <img src="photo3.jpg">
+         <p class="name">Amit Patel</p>
+         <p class="details">45, B+, Ahmedabad, Gujarat</p>
+         <button class="a1">heart</button>
+         <button class="b1">lung</button>
+         <button class="c1">Recipient</button>
+      </div>
+      <div>
+         <p class="insurance">Health Insurance</br>Understand coverage for donors and recipients, compare plans, and get help.</p>
+         <p class="plans">Feature plans</p>
+         <p class="life">&#127973 Lifeguard Health</br>Essential Care</br>Covers pre/post transplant, donor testing, and ICUup to $250K, $89/monthly</p>
+         <p class="life">&#127973 Harmony Insurance</br>Transplant Plus</br>End-to-end transplant coverage incl, medus and travel stipend. $149/monthly</p>
+         <p class="life">How coverage works?</br>most comprehensive plans cover donor evaluation, surgery, follow-up, and recipient
+         medications, Always verify network hospitals and pre-authorization steps.</p>
+         <h8 class="assistance">Need assistance?</h8></br>
+         <button class="guide">Talk to an Insurance Guide +</button>
+      </div>
+      <div>
+         <p class="contribute">Contribute</p>
+         <p class="add">Add a donor or arecipient request</p>
+         <button class="d1">❤️DONATE</br>register as a donor</button>
+         <button class="d1">❤️REQUEST</br>Ask for an organ</button>
+         <button class="d1">💊MEDICINES</br>Add medication information</button>
+      </div>
+   </body>
+</html>
